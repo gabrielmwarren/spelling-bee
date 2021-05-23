@@ -42,5 +42,6 @@ def main():
 main()
 results = set(valid_words) 
 separator = ", "
-print(separator.join(sorted(results, key=lambda item: (-len(item), item))))
-print(separator.join(pangrams))
+print('Words: ', separator.join(sorted(results, key=lambda item: (-len(item), item))))
+print('--------------')
+print('Pangrams: ', separator.join(set(pangrams)))
